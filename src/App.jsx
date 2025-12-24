@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Toast from "./components/Toast";
 import HomePage from "./pages/HomePage";
-import FeaturesPage from "./pages/FeaturesPage";
+import UsersPage from "./pages/UsersPage";
 import PostsPage from "./pages/PostsPage";
 import PostDetailsPage from "./pages/PostDetailsPage";
 import ContactPage from "./pages/ContactPage";
@@ -15,7 +15,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/features" element={<FeaturesPage />} />
+          <Route path="/users" element={<UsersPage />} />
           <Route path="/posts" element={<PostsPage />} />
           <Route path="/posts/:id" element={<PostDetailsPage />} />
           <Route path="/contact" element={<ContactPage />} />

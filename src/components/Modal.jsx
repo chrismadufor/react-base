@@ -25,7 +25,7 @@ export default function Modal({ isOpen, onClose, children }) {
       {/* Overlay click to close */}
       <div className="absolute inset-0" onClick={onClose}></div>
       {/* Modal content */}
-      <div className="relative px-[5%] z-10">{children}</div>
+      <div className="relative px-[5%] z-10 w-full">{children}</div>
     </div>
   );
 }
